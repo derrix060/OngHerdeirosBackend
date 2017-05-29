@@ -5,7 +5,7 @@ from OngWebProject.model.events import Event
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'Hello, World! - v1'
 
 @app.route('/1')
 def hello_1():
