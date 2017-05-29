@@ -7,6 +7,9 @@ from OngWebProject.model.events import Event
 def hello_world():
     return 'Hello, World!'
 
+@app.route('/1')
+def hello_1():
+    return 'Hello, 1'
 
 @app.route('/api/herdeiros/eventos/all')
 def get_all_events():
