@@ -1,6 +1,5 @@
 from flask import jsonify
-from main import app
-from OngWebProject import events, events_path, itens, itens_path
+from main import app, events, events_path, itens, itens_path
 from OngWebProject.model.events import Event
 
 
