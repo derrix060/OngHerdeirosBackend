@@ -45,7 +45,7 @@ def create_events():
     f.write(rtn)
     f.close()
     return rtn
-    
+
 
 @app.route('/2')
 def hello_world2():
@@ -56,7 +56,9 @@ def hello_world2():
 def hello_world3():
     return '/3'
 
-app.run(threaded=True)
-app.config.update(
-  DEBUG=True,
-  PROPAGATE_EXCEPTIONS=True)
+
+if __name__ == '__main__':
+    app.run(threaded=True)
+    app.config.update(
+        DEBUG=True,
+        PROPAGATE_EXCEPTIONS=True)
