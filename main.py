@@ -15,5 +15,15 @@ f.close()
 
 import OngWebProject.routes
 
+
+@app.route('/2')
+def hello_world2():
+    return 'Hello, World! - v2'
+
+
+@app.route('/3')
+def hello_world3():
+    return 'Hello, World! - v3'
+
 if __name__ == '__main__':
-    app.run(threaded=True)
+    app.run(debug=True, threaded=True)
