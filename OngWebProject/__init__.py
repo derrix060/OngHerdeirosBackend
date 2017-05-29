@@ -1,7 +1,6 @@
 from flask import Flask
 
 app = Flask(__name__)
-
 events_path = './OngWebProject/sources/events.json'
 itens_path = './OngWebProject/sources/itens.json'
 
