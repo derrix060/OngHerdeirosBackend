@@ -45,16 +45,7 @@ def create_events():
     f.write(rtn)
     f.close()
     return rtn
-
-
-@app.route('/api/herdeiros/eventos/add/<name>/<date>')
-def add_event(name, date):
-    event = Event(name, date)
-    events.append(event)
-    f = open(events_path, 'w+')
-    f.write(events)
-    f.close()
-    return 'Event added!'
+    
 
 @app.route('/2')
 def hello_world2():
